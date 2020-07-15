@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/training.css')}}">
+
+  <script>
+  
+    //course content
+
+    var cont = '{{ course.content }}';
+    var cont_list = cont.split(".");
+
+    //course objectives
+
+    var obj = '{{ course.objectives }}';
+    var obj_list = obj.split(".");
+
+    //course audience
+
+    var aud = '{{ course.audience }}';
+    var aud_list = aud.split(".");
+
+    //course prereq
+
+    var prereq = '{{ course.prerequisites }}';
+    var prereq_list = prereq.split(".");
+    
+  </script>
+
+  <title>AI Training</title>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top sticky-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/">
+      <img src="" class="d-inline-block align-top" alt="Company Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="" aria-haspopup="true"
+            aria-expanded="true">
+            Services
+          </a>
+          <div class="dropdown-menu sub-menu-1" aria-labelledby="navbarDropdownMenuLink">
+            <ul>
+              <li><a class="dropdown-item" href="/devops_service">DevOps/Automation</a></li>
+              <li><a class="dropdown-item" href="/infra_service">Infrastucture/Cloud Containerization</a>
+              </li>
+              <li><a class="dropdown-item" href="/development_service">Development Solutions</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="/training" id="navbarDropdownMenuLink" data-toggle=""
+            aria-haspopup="true" aria-expanded="true">
+            Training
+          </a>
+          <div class="dropdown-menu sub-menu-1" aria-labelledby="navbarDropdownMenuLink">
+            <ul>
+              <li><a class="dropdown-item" href="/ai_training">AI & Machine Learning</a></li>
+              <li><a class="dropdown-item" href="/iot_training">IOT & RPA</a></li>
+              <li><a class="dropdown-item" href="/azure_training">Azure</a></li>
+              <li><a class="dropdown-item" href="/devops_training">DevOps & ITSM</a></li>
+              <li><a class="dropdown-item" href="/cloud_training">Cloud Computing</a></li>
+              <li><a class="dropdown-item" href="bigdata_training">Big Data & Analytics</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navingation bar ends -->
+
+  <!-- background image section -->
+  <main role="main">
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg" style="background-image: url({{ course.background }});">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2">
+            <div class="head_img">
+              {% set fname='img/logo/' + course.icon %}
+              <img src="{{ url_for('static', filename = fname)}}" alt="">
+              <div class="stars">
+                <img src="{{ url_for('static', filename = 'img/logo/stars.png')}}" alt="">
+              </div>
+              <div class="bradcam_text">
+                <hr class="sep">
+                <p>
+                  Self-Paced, Live Online & Classroom Enterprise Training
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-10">
+            <div class="bradcam_text">
+              <h3>{{ course.title }}</h3>
+              <hr class="sep">
+              <p>{{ course.subtitle }}
+              </p>
+            </div>
+            <div class="modes">
+              <div class="online-mode mode">
+                <i class="fas fa-tv" aria-hidden="true"></i>
+                <p>Live Online Training</p>
+              </div>
+              <div class="classroom-mode mode">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p>Classroom Training</p>
+              </div>
+              <div class="self-paced-mode register mode">
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+                <p>Self-Paced</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /bradcam_area  -->
+
+    <div class="main_content">
+      <div class="container">
+        <div class="course_nav">
+          <nav class="nav nav-pills nav-fill">
+            <a class="nav-item nav-link" href="#about">About Course</a>
+            <a class="nav-item nav-link" href="#content">Course Content</a>
+            <a class="nav-item nav-link" href="#prereq">Prerequisites</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7" id="about">
+          <div class="blog-post">
+            <h4 class="blog-post-title">About The Course: </h4>
+            <p>{{course.about}}</p>
+
+          </div>
+          <div class="blog-post">
+            <h4 class="blog-post-title">Course Objectives: </h4>
+
+            <p>At the end of our AI & Ml Basic training, you will be able to:</p>
+            <div class="container" id="objective_div">
+            </div>
+          </div>
+
+          <!-- ---------------------------------------------------------------------------- -->
+          <script>
+            var divContent = new Array();
+            var div_list = 'objective_div'
+            let tempContent = '<ul>';
+            for(let i=0; i<obj_list.length; i++) {
+		
+              // prepare formatted content with proper tags   
+              tempContent += ('<li>' + obj_list[i] + '</li>');
+            }              
+              
+            tempContent += '</ul>'; 
+            // now store it 
+            divContent.push(tempContent);
+            document.getElementById(div_list).innerHTML = divContent;
+            console.log(divContent)
+            
+
+          </script>
+          <!-- ---------------------------------------------------------------------------- -->
+
+
+
+          <div id="content">
+            <div class="blog-post">
+              <h4 class="blog-post-title">Course Contents: </h4>
+              <div class="container" id="cont_div">
+              </div>
+            </div>
+          </div>
+          <script>
+            var divContent = new Array();
+            var div_list = 'cont_div'
+            let tpContent = '<ul>';
+            for(let i=0; i<cont_list.length; i++) {
+		
+              // prepare formatted content with proper tags   
+              tpContent += ('<li>' + cont_list[i] + '</li>');
+            }              
+              
+            tpContent += '</ul>'; 
+            // now store it 
+            divContent.push(tpContent);
+            document.getElementById(div_list).innerHTML = divContent;
+            console.log(divContent)
+            
+
+          </script>
+          
+		  
+		  <!-------------------- THIS IS THE CRITICAL AREA -------------------->
+		  <!-- <script>
+				
+				// now fill the content to corresponding headers with prepared data
+				var divList = ['detail1', 'detail2', 'detail3', 'detail4', 'detail5'];
+	
+				for(let i=0; i<divList.length; i++) {
+					document.getElementById(divList[i]).innerHTML = divContent[i];
+				}
+				
+      </script> -->
+      
+      <script>
+        for(let j=0; j<btn_list.length; j++) {
+          document.getElementById(btn_list[j]).innerHTML = cont_list[j];
+        }
+      </script>
+		  <!------------------------------------------------------------------->
+		  
+          <div id="prereq">
+
+            <div class="blog-post">
+              <h4>Target Audience for this course:</h4>
+              <div class="container" id="target_aud">
+              </div>
+            </div>
+
+            <!-- ---------------------------------------------------------------------------- -->
+          <script>
+            var divContent = new Array();
+            var div_list = 'target_aud'
+            let tmpContent = '<ul>';
+            for(let i=0; i<aud_list.length; i++) {
+		
+              // prepare formatted content with proper tags   
+              tmpContent += ('<li>' + aud_list[i] + '</li>');
+            }              
+              
+            tmpContent += '</ul>'; 
+            // now store it 
+            divContent.push(tmpContent);
+            document.getElementById(div_list).innerHTML = divContent;
+            console.log(divContent)
+            
+
+          </script>
+          <!-- ---------------------------------------------------------------------------- -->
+
+
+            <div class="blog-post">
+              <h4>Prerequisites for the course:</h4>
+              <div class="container">
+                <ul>
+                  <li>Curiosity to learn.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-1"></div>
+        <div class="col-xl-3">
+          <div class="container cont_container">
+            <div class="contact_short">
+              <div class="cont_img mx-auto">
+                <img src="{{ url_for('static', filename = 'img/logo/call.png')}}" class="mx-auto" alt="">
+              </div>
+              <div class="cont_content">
+                <p>Conatct us</p>
+                <hr>
+                <p>Connect with us today to see how can we streamline your
+                  business operations. Drop in your details and our team will be in touch
+                  shortly.
+                </p>
+                <button class="boxed-btn3 wow fadeInUp">Connect with us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- FOOTER -->
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer_top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-2 col-md-3">
+            <div class="footer_logo">
+              <a href="/">
+                <img src="" alt="Company Logo">
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-9">
+            <div class="menu_links">
+              <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/devops_service">Services</a></li>
+                <li><a href="/training">Trainings</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="socail_links">
+              <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_border"></div>
+
+        <div class="footer_company">
+          <div class="row align-items-center">
+
+            <div class="col-xl-4">
+              <i class="fas fa-building"></i>
+              <h6>Address</h6>
+              <p>Address of the company</p>
+            </div>
+            <div class="col-xl-4">
+              <i class="fas fa-envelope-open-text"></i>
+              <h6>Email</h6>
+              <p>Address of the company</p>
+            </div>
+            <div class="col-xl-4">
+              <i class="fas fa-phone"></i>
+              <h6>Contact Number</h6>
+              <p>Address of the company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy-right_text">
+      <div class="container">
+        <div class="footer_border"></div>
+        <div class="row">
+          <div class="col-xl-12">
+            <p class="copy_right text-center">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> Comapny Name All rights reserved |
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="{{ url_for('static', filename = 'js/details.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

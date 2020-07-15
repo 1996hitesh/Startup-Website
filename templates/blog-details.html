@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/blog.css')}}">
+
+
+    <title>Blogs</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top sticky-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename = 'img/logo/company_logo.png')}}" class="d-inline-block align-top"
+                alt="Company Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle=""
+                        aria-haspopup="true" aria-expanded="true">
+                        Services
+                    </a>
+                    <div class="dropdown-menu sub-menu-1" aria-labelledby="navbarDropdownMenuLink">
+                        <ul>
+                            <li><a class="dropdown-item" href="/devops_service">DevOps/Automation</a></li>
+                            <li><a class="dropdown-item" href="/infra_service">Infrastucture/Cloud Containerization</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/development_service">Development Solutions</a></li>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/training" id="navbarDropdownMenuLink" data-toggle=""
+                        aria-haspopup="true" aria-expanded="true">
+                        Training
+                    </a>
+                    <div class="dropdown-menu sub-menu-1" aria-labelledby="navbarDropdownMenuLink">
+                        <ul>
+                            <li><a class="dropdown-item" href="/ai_training">AI & Machine Learning</a></li>
+                            <li><a class="dropdown-item" href="/iot_training">IOT & RPA</a></li>
+                            <li><a class="dropdown-item" href="/azure_training">Azure</a></li>
+                            <li><a class="dropdown-item" href="/devops_training">DevOps & ITSM</a></li>
+                            <li><a class="dropdown-item" href="/cloud_training">Cloud Computing</a></li>
+                            <li><a class="dropdown-item" href="bigdata_training">Big Data & Analytics</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navigation bar ends -->
+    <section class="blog_area single-post-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 posts-list">
+                    <div class="single-post">
+                        <div class="feature-img" style="margin-top:30px;">
+                            <img class="card-img rounded-0"
+                                src="{{ url_for('static', filename = 'img/main_images/blog1.png')}}" alt="">
+                        </div>
+                        <div class="blog_details">
+                            <h2>Installation of Anaconda Tool For Machine Learning</h2>
+                            <ul class="blog-info-link mt-3 mb-4">
+                                <li><a href="#"><i class="fa fa-user"></i> Installation, Product</a></li>
+                            </ul>
+                            <p class="excert">Anaconda is a package manager, an environment manager, and Python
+                                distribution that contains a collection of many open source packages (numpy, scikit-learn, 
+                                scipy, pandas to name a few). If you need additional packages after installing Anaconda, 
+                                you can use Anaconda’s package manager, conda or pip to install those packages. This is 
+                                highly advantageous as you don’t have to manage dependencies between multiple packages 
+                                yourself. Conda even makes it easy to switch between Python 2 and 3 (you can learn more 
+                                about it here). In fact, an installation of Anaconda is also a common way to install 
+                                Jupyter Notebooks.
+                            </p>
+                            <p>
+                                MCSE boot camps have its supporters and its detractors. Some people do not understand
+                                why you
+                                should have to spend money on boot camp when you can get the MCSE study materials
+                                yourself at a
+                                fraction of the camp price. However, who has the willpower to actually sit through a
+                                self-imposed MCSE training. who has the willpower to actually
+                            </p>
+                            <div class="quote-wrapper">
+                                <div class="quotes">
+                                    MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you
+                                    should have to spend money on boot camp when you can get the MCSE study materials
+                                    yourself at
+                                    a fraction of the camp price. However, who has the willpower to actually sit through
+                                    a
+                                    self-imposed MCSE training.
+                                </div>
+                            </div>
+                            <p>
+                                MCSE boot camps have its supporters and its detractors. Some people do not understand
+                                why you
+                                should have to spend money on boot camp when you can get the MCSE study materials
+                                yourself at a
+                                fraction of the camp price. However, who has the willpower
+                            </p>
+                            <p>
+                                MCSE boot camps have its supporters and its detractors. Some people do not understand
+                                why you
+                                should have to spend money on boot camp when you can get the MCSE study materials
+                                yourself at a
+                                fraction of the camp price. However, who has the willpower to actually sit through a
+                                self-imposed MCSE training. who has the willpower to actually
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-author">
+                        <div class="media align-items-center">
+                            <img src="img/blog/author.png" alt="">
+                            <div class="media-body">
+                                <a href="#">
+                                    <h4>Harvard milan</h4>
+                                </a>
+                                <p>Second divided from form fish beast made. Every of seas all gathered use saying
+                                    you're, he
+                                    our dominion twon Second divided from</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h4 class="widget_title">Category</h4>
+                            <ul class="list cat-list">
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Installation</p>
+                                        <p>(1)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Cloud Operations</p>
+                                        <p>(0)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Modern technology</p>
+                                        <p>(0)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Product</p>
+                                        <p>(1)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Trainings</p>
+                                        <p>(0)</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="single_sidebar_widget newsletter_widget">
+                            <h4 class="widget_title">Newsletter</h4>
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                                </div>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                    type="submit">Subscribe</button>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-3">
+                        <div class="footer_logo">
+                            <a href="/">
+                                <img src="{{ url_for('static', filename = 'img/logo/company_logo.png')}}"
+                                    alt="Company Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-9">
+                        <div class="menu_links">
+                            <ul>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/devops_service">Services</a></li>
+                                <li><a href="/training">Trainings</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="socail_links">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_border"></div>
+
+                <div class="footer_company">
+                    <div class="row align-items-center">
+
+                        <div class="col-xl-4">
+                            <i class="fas fa-building"></i>
+                            <h6>Address</h6>
+                            <p>Address of the company</p>
+                        </div>
+                        <div class="col-xl-4">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <h6>Email</h6>
+                            <p>Address of the company</p>
+                        </div>
+                        <div class="col-xl-4">
+                            <i class="fas fa-phone"></i>
+                            <h6>Contact Number</h6>
+                            <p>Address of the company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> Comapny Name All rights reserved
+                            |
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

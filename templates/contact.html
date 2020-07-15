@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename ='css/contact.css')}}">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top sticky-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+            <img src="" class="d-inline-block align-top" alt="Company Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle=""
+                        aria-haspopup="true" aria-expanded="true">
+                        Services
+                    </a>
+                    <div class="dropdown-menu sub-menu-1" aria-labelledby="navbarDropdownMenuLink">
+                        <ul>
+                            <li><a class="dropdown-item" href="/devops_service">DevOps/Automation</a></li>
+                            <li><a class="dropdown-item" href="/infra_service">Infrastucture/Cloud Containerization</a></li>
+                            <li><a class="dropdown-item" href="/development_service">Development Solutions</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/training" id="navbarDropdownMenuLink" data-toggle=""
+                        aria-haspopup="true" aria-expanded="true">
+                        Training
+                    </a>
+                    <div class="dropdown-menu sub-menu-1" aria-labelledby="navbarDropdownMenuLink">
+                        <ul>
+                            <li><a class="dropdown-item" href="/ai_training">AI & Machine Learning</a></li>
+                            <li><a class="dropdown-item" href="/iot_training">IOT & RPA</a></li>
+                            <li><a class="dropdown-item" href="/azure_training">Azure</a></li>
+                            <li><a class="dropdown-item" href="/devops_training">DevOps & ITSM</a></li>
+                            <li><a class="dropdown-item" href="/cloud_training">Cloud Computing</a></li>
+                            <li><a class="dropdown-item" href="bigdata_training">Big Data & Analytics</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navigation bar ends -->
+    <main role="main">
+
+        <!-- bradcam_area  -->
+        <div class="bradcam_area bradcam_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="bradcam_text text-center">
+                            <h3>Contact US</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Esse aliquid ratione dolores nemo sed recusandae, consectetur ullam,
+                                illum, at voluptate nam impedit omnis odit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /bradcam_area  -->
+
+        <section class="contact-section section_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title">Get in Touch</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <form class="form-contact contact_form" action="/contact" method="post" id="contactForm"
+                            novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        Message*
+                                        <textarea class="form-control w-100" name="message" id="message" cols="30"
+                                            rows="9" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter Message'"
+                                            placeholder='Enter Message'></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Name*
+                                        <input class="form-control" name="name" id="name" type="text"
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter your name'" placeholder='Enter your name'>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Email Id*
+                                        <input class="form-control" name="email" id="email" type="email"
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter email address'"
+                                            placeholder='Enter email address'>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        Phone Number*
+                                        <input class="form-control" name="phn" id="subject" type="tel"
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter Phone Number'"
+                                            placeholder='Enter Phone Number'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="fas fa-home"></i></span>
+                            <div class="media-body">
+                                <h3>Buttonwood, California.</h3>
+                                <p>Rosemead, CA 91770</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="fas fa-phone"></i></span>
+                            <div class="media-body">
+                                <h3>00 (440) 9865 562</h3>
+                                <p>Mon to Fri 9am to 6pm</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="far fa-envelope"></i></span>
+                            <div class="media-body">
+                                <h3>support@colorlib.com</h3>
+                                <p>Send us your query anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-3">
+                        <div class="footer_logo">
+                            <a href="/">
+                                <img src="" alt="Company Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-9">
+                        <div class="menu_links">
+                            <ul>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/devops_service">Services</a></li>
+                                <li><a href="/training">Trainings</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="socail_links">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> Comapny Name All rights reserved
+                            |
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
