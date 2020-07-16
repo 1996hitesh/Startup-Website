@@ -1,0 +1,20 @@
+{
+    "params":{
+
+        "local_url": "mysql://root:Hitesh@123@localhost/startup",
+        "prod_url": "",
+        "fb_url": "https://facebook.com",
+        "tw_url": "",
+        "insta_url": "",
+        "gplus_url": "",
+        "gmail-user":"",
+        "gmail-password":"",
+        "admin-user":"hitesh",
+        "admin-password":"password"
+
+
+    }
+
+
+
+}
