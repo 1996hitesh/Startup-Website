@@ -1,0 +1,409 @@
+.our_mission_area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 1, ../../Arafath/CL/December/233. Startup/HTML/scss/_mission.scss */
+    .our_mission_area {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 1, ../../Arafath/CL/December/233. Startup/HTML/scss/_mission.scss */
+    .our_mission_area {
+      padding-top: 100px;
+      padding-bottom: 70px;
+    }
+  }
+  
+  /* line 13, ../../Arafath/CL/December/233. Startup/HTML/scss/_mission.scss */
+  .our_mission_area .mission_text h4 {
+    font-size: 24px;
+    color: #615CFD;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* line 21, ../../Arafath/CL/December/233. Startup/HTML/scss/_mission.scss */
+  .our_mission_area .mision_info .single_mission {
+    margin-bottom: 15px;
+  }
+  
+  /* line 23, ../../Arafath/CL/December/233. Startup/HTML/scss/_mission.scss */
+  .our_mission_area .mision_info .single_mission p {
+    color: #707070;
+    font-size: 16px;
+  }
+
+  .about_area {
+    background: #1F1F1F;
+    position: relative;
+  }
+  
+  /* line 4, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+  .about_area::before {
+    content: '';
+    background-image: url(../img/main_images/about.png);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 9;
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 4, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+    .about_area::before {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 4, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+    .about_area::before {
+      display: none;
+    }
+  }
+  
+  /* line 23, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+  .about_area .about_thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+  }
+  
+  /* line 29, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+  .about_area .about_thumb img {
+    width: 100%;
+  }
+  
+  /* line 33, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+  .about_area .about_info {
+    padding: 100px 0;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 33, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+    .about_area .about_info {
+      padding: 80px 0;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 33, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+    .about_area .about_info {
+      padding: 100px 0;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
+    /* line 33, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+    .about_area .about_info {
+      padding: 100px 0;
+    }
+  }
+  
+  /* line 46, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+  .about_area .section_title h3 {
+    margin-top: 25px;
+    margin-bottom: 54px;
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
+    /* line 46, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+    .about_area .section_title h3 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    /* line 46, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+    .about_area .section_title h3 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* line 58, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+  .about_area .section_title .mid_text {
+    color: #C9C9C9;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+  
+  /* line 64, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+  .about_area .section_title .last_text {
+    color: #C9C9C9;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 44px;
+  }
+
+
+  .how_we_work_area {
+    position: relative;
+  }
+  
+  /* line 3, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area.extra_margin_bottom {
+    margin-bottom: 160px;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 3, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+    .how_we_work_area.extra_margin_bottom {
+      margin-bottom: 70px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 3, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+    .how_we_work_area.extra_margin_bottom {
+      margin-bottom: 100px;
+    }
+  }
+  
+  /* line 12, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area.extra_margin {
+    margin-top: 160px;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 12, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+    .how_we_work_area.extra_margin {
+      margin-top: 70px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 12, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+    .how_we_work_area.extra_margin {
+      margin-top: 100px;
+    }
+  }
+  
+  /* line 21, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-image: url(../img/main_images/work.png);
+    background-size: cover;
+    background-position: center center;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 21, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+    .how_we_work_area::before {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 21, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+    .how_we_work_area::before {
+      display: none;
+    }
+  }
+  
+  /* line 39, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area .work_info {
+    padding: 180px 0;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 39, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+    .how_we_work_area .work_info {
+      padding: 80px 0;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 39, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+    .how_we_work_area .work_info {
+      padding: 100px 0;
+    }
+  }
+  
+  /* line 48, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area .work_info .section_title .mid_text {
+    font-size: 18px;
+    font-family: "Muli", sans-serif;
+    color: #1F1F1F;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  
+  /* line 55, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area .work_info .section_title .last_p {
+    font-size: 16px;
+    color: #707070;
+    font-weight: 400;
+  }
+  
+  /* line 61, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area .work_info .video_watch {
+    margin-top: 37px;
+  }
+  
+  /* line 64, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area .work_info .video_watch .play_btn a {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #615CFD;
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    display: inline-block;
+  }
+  
+  /* line 76, ../../Arafath/CL/December/233. Startup/HTML/scss/_work.scss */
+  .how_we_work_area .work_info .video_watch span {
+    font-size: 20px;
+    color: #1F1F1F;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
+  }
+
+  .section_title span {
+    position: relative;
+    z-index: 3;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #615CFD;
+    text-transform: capitalize;
+    margin-bottom: 19px;
+    display: block;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* line 14, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+  .section_title h3 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 400;
+    color: #1F1F1F;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 15px;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 14, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+    .section_title h3 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 14, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+    .section_title h3 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* line 31, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+    .section_title h3 br {
+      display: none;
+    }
+  }
+  
+  /* line 37, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+  .section_title p {
+    font-size: 16px;
+    color: #727272;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 767px) {
+    /* line 43, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+    .section_title p br {
+      display: none;
+    }
+  }
+  
+  /* line 51, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+  .section_title.white_text h3 {
+    color: #fff;
+  }
+  
+  /* line 54, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+  .section_title.white_text span {
+    color: #fff;
+    padding-top: 0;
+  }
+  
+  /* line 57, ../../Arafath/CL/December/233. Startup/HTML/scss/_section_title.scss */
+  .section_title.white_text span:before {
+    display: none;
+  }
+
+  .boxed-btn3 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
+    background: #615CFD;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 33px;
+    font-family: "Muli", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    border: 1px solid transparent;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  /* line 45, ../../Arafath/CL/December/233. Startup/HTML/scss/_btn.scss */
+  .boxed-btn3:hover {
+    border: 1px solid #615CFD;
+    color: #615CFD !important;
+    background: transparent;
+  }
+  
+  /* line 50, ../../Arafath/CL/December/233. Startup/HTML/scss/_btn.scss */
+  .boxed-btn3:focus {
+    outline: none;
+  }
+  
+  /* line 53, ../../Arafath/CL/December/233. Startup/HTML/scss/_btn.scss */
+  .boxed-btn3.large-width {
+    width: 220px;
+  }
+
+
